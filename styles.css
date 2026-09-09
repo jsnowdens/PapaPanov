@@ -192,6 +192,7 @@ nav a:hover::after, nav a:focus-visible::after { right: 0; }
   flex: 0 0 auto;
   accent-color: var(--amber);
 }
+.consent-row a { color: var(--paper-light); text-underline-offset: 3px; }
 .newsletter-submit {
   min-height: 50px;
   margin-top: 25px;
@@ -247,6 +248,16 @@ nav a:hover::after, nav a:focus-visible::after { right: 0; }
 .footer-social svg { width: 16px; height: 16px; fill: currentColor; }
 .footer-social rect, .footer-social circle { fill: none; stroke: currentColor; stroke-width: 1.8; }
 .footer-social .fill-dot { fill: currentColor; stroke: none; }
+.footer-bottom a { text-underline-offset: 3px; }
+
+.privacy-page { width: min(780px, calc(100% - 64px)); margin: 0 auto; padding: clamp(70px, 10vw, 130px) 0; }
+.privacy-page header { margin-bottom: 64px; padding-bottom: 40px; border-bottom: 1px solid var(--rule); }
+.privacy-page header .eyebrow { margin-bottom: 18px; }
+.privacy-page h1 { margin: 0; font-size: clamp(58px, 9vw, 100px); font-weight: 400; line-height: .92; letter-spacing: -.055em; }
+.policy-date { margin: 24px 0 0; color: var(--muted); font: 700 11px/1.2 Arial, Helvetica, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.privacy-page h2 { margin: 58px 0 15px; font-size: 27px; font-weight: 400; }
+.privacy-page p { color: #55463b; font-size: 18px; line-height: 1.72; }
+.privacy-page a { color: var(--amber); }
 
 .reading-page { width: min(1040px, calc(100% - 64px)); margin: 0 auto; padding: clamp(70px, 10vw, 140px) 0 150px; }
 .reading-intro { max-width: 700px; margin-bottom: 56px; }
@@ -332,6 +343,7 @@ nav a:hover::after, nav a:focus-visible::after { right: 0; }
   .newsletter-fields label:first-child { grid-column: auto; }
   .footer-bottom { flex-direction: column; justify-content: center; gap: 12px; text-align: center; }
   .reading-page { width: min(100% - 36px, 560px); padding: 65px 0 90px; }
+  .privacy-page { width: min(100% - 36px, 560px); padding: 65px 0 90px; }
   .reading-intro { margin-bottom: 38px; }
   .story-picker { grid-template-columns: 1fr; margin-bottom: 58px; }
   .story-picker button + button { border-left: 0; border-top: 1px solid var(--rule); }
